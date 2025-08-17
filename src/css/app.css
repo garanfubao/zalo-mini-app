@@ -1,0 +1,223 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Custom styles for KFC Mini App */
+:root {
+  --primary-color: #d62d20;
+  --secondary-color: #ff6b35;
+  --text-color: #333;
+  --background-color: #f5f5f5;
+  --card-background: #fff;
+  --border-color: #e0e0e0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  min-height: 100vh;
+  background-color: var(--background-color);
+}
+
+/* Banner styles */
+.banner-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+/* Menu item styles */
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: var(--card-background);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.menu-icon {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.menu-title {
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Product card styles */
+.product-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Cart styles */
+.cart-item-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.quantity-text {
+  min-width: 32px;
+  text-align: center;
+  padding: 0 8px;
+}
+
+/* Empty states */
+.empty-cart,
+.empty-orders {
+  padding: 60px 20px;
+}
+
+.empty-icon {
+  font-size: 64px;
+  margin-bottom: 16px;
+  opacity: 0.6;
+}
+
+/* Order history styles */
+.order-item {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.order-item:last-child {
+  border-bottom: none;
+}
+
+.order-item-image {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Profile styles */
+.register-banner {
+  background: linear-gradient(135deg, #d62d20 0%, #ff6b35 100%);
+  color: white;
+}
+
+.oa-avatar {
+  width: 48px;
+  height: 48px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: white;
+}
+
+.qr-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 2px dashed var(--border-color);
+  border-radius: 12px;
+  background-color: var(--card-background);
+}
+
+.qr-placeholder {
+  width: 100px;
+  height: 100px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+/* Follow section */
+.follow-section .oa-avatar {
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+}
+
+/* Utility classes */
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.text-gray {
+  color: #666 !important;
+}
+
+.text-gray-70 {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 375px) {
+  .menu-item {
+    padding: 8px;
+  }
+  
+  .menu-icon {
+    font-size: 20px;
+  }
+  
+  .product-image {
+    height: 100px;
+  }
+}
