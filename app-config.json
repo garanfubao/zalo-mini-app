@@ -1,16 +1,16 @@
 {
   "app": {
-    "title": "Ga Ran Fubao",
-    "textColor": {
-      "light": "black",
-      "dark": "white"
-    },
-    "statusBar": "transparent",
-    "actionBarHidden": true,
-    "hideIOSSafeAreaBottom": true,
-    "hideAndroidBottomNavigationBar": false
+    "appId": "2550431164744910512",
+    "title": "Gà Rán FKT",
+    "version": "1.0.0",
+    "description": "Zalo Mini App gà rán - đặt món nhanh gọn",
+    "icon": "/assets/placeholder.jpg"
   },
-  "listCSS": [],
-  "listSyncJS": [],
-  "listAsyncJS": []
+  "router": {
+    "entry": "/",
+    "pages": ["/", "/index", "/products", "/cart", "/orders", "/profile"]
+  },
+  "listSyncJS": ["/assets/index-Cyd_-X3R.js"],
+  "listAsyncJS": [],
+  "listCSS": ["/assets/main-DOEMmPSY.css"]
 }

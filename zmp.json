@@ -1,0 +1,20 @@
+{
+  "app": {
+    "appId": "YOUR_APP_ID",
+    "version": "1.0.0",
+    "title": "G\u00e0 R\u00e1n FKT",
+    "description": "Zalo Mini App g\u00e0 r\u00e1n - \u0111\u1eb7t m\u00f3n nhanh g\u1ecdn",
+    "icon": "/assets/placeholder.jpg"
+  },
+  "router": {
+    "entry": "/",
+    "pages": [
+      "/",
+      "/index",
+      "/products",
+      "/cart",
+      "/orders",
+      "/profile"
+    ]
+  }
+}
