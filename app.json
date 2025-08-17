@@ -1,0 +1,57 @@
+{
+  "app": {
+    "appName": "Gà Rán FKT",
+    "appId": "ga-ran-fkt-2024",
+    "version": "1.0.0",
+    "description": "Ứng dụng đặt món gà rán FKT - Ngon, rẻ, nhanh"
+  },
+  "pages": [
+    "pages/index",
+    "pages/products", 
+    "pages/cart",
+    "pages/profile",
+    "pages/orders"
+  ],
+  "window": {
+    "navigationBarTitleText": "Gà Rán FKT",
+    "navigationBarBackgroundColor": "#ff4757",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#f8f9fa"
+  },
+  "tabBar": {
+    "custom": false,
+    "color": "#999999",
+    "selectedColor": "#ff4757",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index",
+        "text": "Trang chủ",
+        "iconPath": "assets/icons/home.png",
+        "selectedIconPath": "assets/icons/home-active.png"
+      },
+      {
+        "pagePath": "pages/products",
+        "text": "Giỏ hàng",
+        "iconPath": "assets/icons/cart.png", 
+        "selectedIconPath": "assets/icons/cart-active.png"
+      },
+      {
+        "pagePath": "pages/orders",
+        "text": "Đơn hàng",
+        "iconPath": "assets/icons/order.png",
+        "selectedIconPath": "assets/icons/order-active.png"
+      },
+      {
+        "pagePath": "pages/profile",
+        "text": "Cá nhân",
+        "iconPath": "assets/icons/user.png",
+        "selectedIconPath": "assets/icons/user-active.png"
+      }
+    ]
+  },
+  "permissions": [
+    "zalo.me",
+    "location"
+  ]
+}
